@@ -1,0 +1,18 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyfold"
+version = "1.0.0"
+description = "Python implementation of fold"
+readme = "README.md"
+authors = [{ name = "Jakob Schmitt", email = "jakob.schmitt@code.berlin" }]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+build = ["build", "twine"]
+dev   = ["pytest"]
+
+[project.urls]
+repository    = "https://github.com/JokusPokus/coding_challenge"
