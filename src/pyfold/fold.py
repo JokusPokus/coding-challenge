@@ -36,9 +36,9 @@ def fold(
     if right:
         sequence = reversed(sequence)
 
-    cumulator = initial_value
+    aggregate = initial_value
 
     for item in sequence:
-        cumulator = function(cumulator, item)
+        aggregate = function(aggregate, item)
 
-    return cumulator
+    return aggregate
