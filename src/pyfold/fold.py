@@ -1,5 +1,11 @@
 """
 Folding of sequences to single values.
+
+Common usage examples:
+    from pyfold import fold
+
+    fold([1, 2, 3, 4], lambda x, y: x * y, 1)  # => 24
+    fold(['y', 'e'], lambda x, y: x + y, 'h', right=True)  # => 'hey'
 """
 from typing import Callable, Sequence, TypeVar
 
