@@ -20,7 +20,7 @@ from pyfold import fold
 
 # Usage examples
 fold([1, 2, 3], 0, lambda x, y: x + y)  # 6
-fold(['y', 'e'], 'h', lambda x, y: x * y, right=True)  # 'hey'
+fold(['y', 'e'], 'h', lambda x, y: x + y, right=True)  # 'hey'
 ```
 
 ### Tests
@@ -30,4 +30,14 @@ To run tests, install and run the `pytest` package:
 ```sh
 python -m pip install pytest
 pytest
+```
+
+### Build
+
+For distribution purposes, the `pyfold` package can be conveniently built into 
+a source archive and python wheel using the `build` package:
+
+```sh
+python -m pip install build
+python -m build
 ```
