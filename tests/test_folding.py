@@ -11,6 +11,8 @@ NON_EMPTY_SEQUENCES = [
     pytest.param([1, 2, 3], 1, 7, id='multiple_ints'),
     pytest.param(['b', 'c', 'd'], 'a', 'abcd', id='multiple_strings'),
     pytest.param([[1, 2], [3, 4]], [], [1, 2, 3, 4], id='multiple_lists'),
+    pytest.param(('b', 'c', 'd'), 'a', 'abcd', id='tuple_sequence'),
+    pytest.param(range(4), 0, 6, id='lazy_range_sequence'),
 ]
 
 OPERATORS = [
